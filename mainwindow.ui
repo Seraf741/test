@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>401</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuread">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="actionread"/>
+    <addaction name="actionwrite"/>
+   </widget>
+   <widget class="QMenu" name="menumethods">
+    <property name="title">
+     <string>methods</string>
+    </property>
+    <addaction name="actionapproximation"/>
+   </widget>
+   <addaction name="menuread"/>
+   <addaction name="menumethods"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionread">
+   <property name="text">
+    <string>read</string>
+   </property>
+  </action>
+  <action name="actionwrite">
+   <property name="text">
+    <string>write</string>
+   </property>
+  </action>
+  <action name="actionapproximation">
+   <property name="text">
+    <string>approximation</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
